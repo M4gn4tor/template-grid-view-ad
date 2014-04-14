@@ -17,13 +17,14 @@
    		input, textarea  { -webkit-user-select:text; }
   </style>
   <script src="intelxdk.js"></script>
+  <script src='cordova.js'></script> 
+  <script src='xhr.js'></script>
   <!--
       Include xhr.js in your index.html when using web services that make cross origin requests
       This file makes those requests successfully when testing your apps under the "EMULATE", "BUILD" & "TEST" tab with the 
       Intel(R) App Preview mobile app.
       DISCLAIMER: If you don't need to perform these requests, remove the following script (xhr.js)
   -->
-  <script type="text/javascript" charset="utf-8" src="xhr.js"></script>
   <script type="text/javascript">
    /* This code is used to run as soon as Intel activates */
    		var onDeviceReady=function(){

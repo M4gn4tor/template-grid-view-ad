@@ -6,6 +6,7 @@
 "articleUrl":"http://software.intel.com/en-us/html5/articles/templates-to-get-started-with-html5-mobile-app-development",
 "type":"appdesigner",
 "visible" : "true",
+"sortWeight":"0.5",
 "keywords":["App Designer"],
 "highlights" : ["App Designer"]
 }

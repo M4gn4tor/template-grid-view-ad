@@ -1,175 +1,199 @@
 <!DOCTYPE html>
 <html>
-    <!--
-  * Please see the included README.md file for license terms and conditions.
-  -->
-
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="app_framework/2.1/css/af.ui.min.css">
-        <link rel="stylesheet" type="text/css" href="app_framework/2.1/css/icons.min.css">
-        <title>Blank App Designer Project Template</title>
-        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-
-        <!--
-  * The "meta viewport" tag (below) helps your app size appropriately to a device's screen.
-  * Note that the meta viewport approach is being phased out in favor of the @viewport CSS rule.
-  * For a quick overview of both, see this article:
-  *   http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag
-  * To see what happens, try the app on a real device with and without a "meta viewport" tag.
--->
-
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1, maximum-scale=2"> -->
-
-        <style>
-            /* following three (cascaded) are equivalent to above three meta viewport statements */
-            /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html */
-            /* see http://dev.w3.org/csswg/css-device-adapt/ */
-                @-ms-viewport { width: 100vw ; zoom: 100% ; }                           @viewport { width: 100vw ; zoom: 100% ; }
-                @-ms-viewport { user-zoom: fixed ; }                                    @viewport { user-zoom: fixed ; }
-                /*@-ms-viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }   @viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }*/
-        </style>
-
-        <link rel="stylesheet" href="css/old-android.css">
-        <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
-
-        <!-- IMPORTANT: Do not include your weinre script tag as part of your release builds! -->
-        <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work below -->
-        <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
-
-        <!-- Most third-party libraries should go here. References (below) are just examples to give you the general idea... -->
-        <!-- <script src="lib/ft/fastclick.js"></script> -->
-
-        <script src="intelxdk.js"></script>
-        <!-- phantom library, needed for XDK "legacy" container api calls -->
-        <script src="cordova.js"></script>
-        <!-- phantom library, needed for Cordova api calls -->
-        <script src="xhr.js"></script>
-        <!-- phantom library, needed for XDK "legacy" container CORS -->
-
-        <script src="js/app.js"></script>
-        <script src="js/init-app.js"></script>
-        <script src="js/init-dev.js"></script>
-        <!--                        
-                        You may substitute jQuery for the App Framework selector library.
-                        See http://app-framework-software.intel.com/documentation.php#afui/afui_jquery
-                -->
-        <script type="application/javascript" src="app_framework/2.1/appframework.js"></script>
-        <script type="application/javascript" src="app_framework/2.1/appframework.ui.js" data-ver="1"></script>
-    </head>
-
-    <body id="afui">
-
-        <!-- IMPORTANT: Do not include your weinre script tag as part of your release builds! -->
-        <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work above -->
-        <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
-
-        <div class="uwrap" id="content">
-            <div class="upage panel" id="mainpage" data-header="af-header-0" data-footer="af-footer-0">
-                <div class="upage-outer">
-                    <header class="container-group inner-element uib_w_1" data-uib="app_framework/header" data-ver="1" id="af-header-0">
-                        <h1>Title</h1>
-                        <div class="widget-container wrapping-col single-centered"></div>
-                        <div class="widget-container content-area horiz-area wrapping-col left"></div>
-                        <div class="widget-container content-area horiz-area wrapping-col right"></div>
-                    </header>
-                    <div class="upage-content" id="mainsub">
-
-                        <div class="grid grid-pad urow uib_row_1 row-height-1" data-uib="layout/row" data-ver="0">
-                            <div class="col uib_col_1 col-0_12-12" data-uib="layout/col" data-ver="0">
-                                <div class="widget-container content-area wrapping-col left">
-
-                                    <div class="widget uib_w_2 scale-image d-margins" data-uib="media/img" data-ver="0">
-                                        <figure class="figure-align">
-                                            <img src="images/Checkmark.png">
-
-                                            <figcaption data-position="bottom"></figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="widget uib_w_3 scale-image d-margins" data-uib="media/img" data-ver="0">
-                                        <figure class="figure-align">
-                                            <img src="images/Checkmark.png">
-                                            <figcaption data-position="bottom"></figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="widget uib_w_4 scale-image d-margins" data-uib="media/img" data-ver="0">
-                                        <figure class="figure-align">
-                                            <img src="images/Checkmark.png">
-                                            <figcaption data-position="bottom"></figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="widget uib_w_5 scale-image d-margins" data-uib="media/img" data-ver="0">
-                                        <figure class="figure-align">
-                                            <img src="images/Checkmark.png">
-                                            <figcaption data-position="bottom"></figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="widget uib_w_6 scale-image d-margins" data-uib="media/img" data-ver="0">
-                                        <figure class="figure-align">
-                                            <img src="images/Checkmark.png">
-                                            <figcaption data-position="bottom"></figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="widget uib_w_7 scale-image d-margins" data-uib="media/img" data-ver="0">
-                                        <figure class="figure-align">
-                                            <img src="images/Checkmark.png">
-                                            <figcaption data-position="bottom"></figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="widget uib_w_8 scale-image d-margins" data-uib="media/img" data-ver="0">
-                                        <figure class="figure-align">
-                                            <img src="images/Checkmark.png">
-                                            <figcaption data-position="bottom"></figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="widget uib_w_9 scale-image d-margins" data-uib="media/img" data-ver="0">
-                                        <figure class="figure-align">
-                                            <img src="images/Checkmark.png">
-                                            <figcaption data-position="bottom"></figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="widget uib_w_10 scale-image d-margins" data-uib="media/img" data-ver="0">
-                                        <figure class="figure-align">
-                                            <img src="images/Checkmark.png">
-                                            <figcaption data-position="bottom"></figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="widget uib_w_11 scale-image d-margins" data-uib="media/img" data-ver="0">
-                                        <figure class="figure-align">
-                                            <img src="images/Checkmark.png">
-                                            <figcaption data-position="bottom"></figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="widget uib_w_12 scale-image d-margins" data-uib="media/img" data-ver="0">
-                                        <figure class="figure-align">
-                                            <img src="images/Checkmark.png">
-                                            <figcaption data-position="bottom"></figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="widget uib_w_13 scale-image d-margins" data-uib="media/img" data-ver="0">
-                                        <figure class="figure-align">
-                                            <img src="images/Checkmark.png">
-                                            <figcaption data-position="bottom"></figcaption>
-                                        </figure>
-                                    </div><span class="uib_shim"></span>
-                                </div>
-                            </div>
-                            <span class="uib_shim"></span>
-                        </div>
-                    </div>
-                    <!-- /upage-content -->
-
-                    <footer class="inner-element uib_w_14" data-uib="app_framework/footer" data-ver="1" id="af-footer-0"></footer>
-                </div>
-                <!-- /upage-outer -->
-
+<head>
+    <title>Grid View App template</title>
+<!--
+    This template can be used for photo app with grid view that will open detail view, for applications like Photo App or Instagram app.
+-->  
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0;" />
+    
+    <link rel="stylesheet" type="text/css" href="appframework/af.ui.css" />
+    <link rel="stylesheet" type="text/css" href="appframework/icons.css" />
+    <script type="text/javascript" charset="utf-8" src="appframework/appframework.ui.min.js"></script>
+    
+    <!-- phantom library, needed for XDK "legacy" container api calls -->
+    <script src="intelxdk.js"></script>
+    <!-- phantom library, needed for Cordova api calls -->
+    <script src="cordova.js"></script>
+    <!-- phantom library, needed for XDK "legacy" container CORS -->
+    <script src="xhr.js"></script>
+    
+    <script>
+        var onDeviceReady=function(){                             // called when Cordova is ready
+           if( window.Cordova && navigator.splashscreen ) {     // Cordova API detected
+               $.ui.launch(); 
+               navigator.splashscreen.hide() ;                 // hide splash screen
+            }
+        } ;
+        document.addEventListener("deviceready", onDeviceReady, false) ;
+    </script>
+    
+    <script>   
+        $.ui.autoLaunch = false; 
+        $.ui.backButtonText = "Back";
+                
+        $(document).ready(function(){
+            $.ui.launch();
+        });
+    </script>
+    <style>
+/* CSS responsive square grid */        
+.grid-photo {margin:3px -7px;} 
+.grid-photo:after {content:'';display:block;clear:both;}        
+.grid-photo li {position: relative; display:block; float:left; width: 10%; padding-bottom: 10%;}
+.grid-photo .grid-photo-box {position: absolute;left: 3px;right: 3px;top: 3px;bottom: 3px; background-color: rgba(128,128,128,0.2);} 
+.grid-photo img {width:100%;height:100%}
+@media only screen and (max-width : 1024px) {
+    .grid-photo li {width: 12.5%; padding-bottom: 12.5%;}        
+}        
+@media only screen and (max-width : 768px) {
+    .grid-photo li {width: 16.6%; padding-bottom: 16.6%;}        
+}        
+@media only screen and (max-width : 480px) {
+    .grid-photo li {width: 25%; padding-bottom: 25%;}        
+}
+@media only screen and (max-width : 320px) {
+    .grid-photo li {width: 33.3%; padding-bottom: 33.3%;}        
+}   
+    </style>    
+</head>
+<body> 
+<div id="afui">
+    <div id="content" style="">
+        
+    <!--Grid View Page-->
+        <div class="panel" title="Title" id="gridview" selected="true">
+            <header>
+                <h1>Title</h1>
+                <a href="#" class="button icon refresh" style="float:right"></a>
+            </header>
+            <div class="grid-photo">
+                <li><div class="grid-photo-box"><a href="#item1"><img src="" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#item2"><img src="" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#item3"><img src="" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#item4"><img src="" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#item5"><img src="" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#item6"><img src="" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#item7"><img src="" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#item8"><img src="" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#item9"><img src="" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#item10"><img src="" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#item11"><img src="" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#item12"><img src="" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#item13"><img src="" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#item14"><img src="" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#item15"><img src="" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#item16"><img src="" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#item17"><img src="" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#item18"><img src="" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#item19"><img src="" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#item20"><img src="" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#item21"><img src="" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#item22"><img src="" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#item23"><img src="" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#item24"><img src="" /></a></div></li>
             </div>
-            <!-- /upage -->
-
+            <a id="more" class="button block">Load More</a>
         </div>
-        <!-- /uwrap -->
-    </body>
-
-</html>
+        
+    <!--Detail View Pages for each grid items-->
+        <div class="panel" title="Item 1" id="item1">
+            <p>This is detail view for Item 1</p>
+        </div>
+        
+        <div class="panel" title="Item 2" id="item2">
+            <p>This is detail view for Item 2</p>
+        </div>
+        
+        <div class="panel" title="Item 3" id="item3">
+            <p>This is detail view for Item 3</p>
+        </div>
+        
+        <div class="panel" title="Item 4" id="item4">
+            <p>This is detail view for Item 4</p>
+        </div>
+        
+        <div class="panel" title="Item 5" id="item5">
+            <p>This is detail view for Item 5</p>
+        </div>
+        
+        <div class="panel" title="Item 6" id="item6">
+            <p>This is detail view for Item 6</p>
+        </div>
+        
+        <div class="panel" title="Item 7" id="item7">
+            <p>This is detail view for Item 7</p>
+        </div>
+        
+        <div class="panel" title="Item 8" id="item8">
+            <p>This is detail view for Item 8</p>
+        </div>
+        
+        <div class="panel" title="Item 9" id="item9">
+            <p>This is detail view for Item 9</p>
+        </div>
+        
+        <div class="panel" title="Item 10" id="item10">
+            <p>This is detail view for Item 10</p>
+        </div>
+        
+        <div class="panel" title="Item 11" id="item11">
+            <p>This is detail view for Item 11</p>
+        </div>
+        
+        <div class="panel" title="Item 12" id="item12">
+            <p>This is detail view for Item 12</p>
+        </div>
+        
+        <div class="panel" title="Item 13" id="item13">
+            <p>This is detail view for Item 13</p>
+        </div>
+        
+        <div class="panel" title="Item 14" id="item14">
+            <p>This is detail view for Item 14</p>
+        </div>
+        
+        <div class="panel" title="Item 15" id="item15">
+            <p>This is detail view for Item 15</p>
+        </div>
+        
+        <div class="panel" title="Item 16" id="item16">
+            <p>This is detail view for Item 16</p>
+        </div>
+        
+        <div class="panel" title="Item 17" id="item17">
+            <p>This is detail view for Item 17</p>
+        </div>
+        
+        <div class="panel" title="Item 18" id="item18">
+            <p>This is detail view for Item 18</p>
+        </div>
+        
+        <div class="panel" title="Item 19" id="item19">
+            <p>This is detail view for Item 19</p>
+        </div>
+        
+        <div class="panel" title="Item 20" id="item20">
+            <p>This is detail view for Item 20</p>
+        </div>
+        
+        <div class="panel" title="Item 21" id="item21">
+            <p>This is detail view for Item 11</p>
+        </div>
+        
+        <div class="panel" title="Item 22" id="item22">
+            <p>This is detail view for Item 12</p>
+        </div>
+        
+        <div class="panel" title="Item 23" id="item23">
+            <p>This is detail view for Item 13</p>
+        </div>
+        
+        <div class="panel" title="Item 24" id="item24">
+            <p>This is detail view for Item 14</p>
+        </div>        
+        
+    </div>
+</div>
+</body>
+</html>    

@@ -2,15 +2,15 @@
   "project": {
     "projectSettingsVersion": "1.1",
     "creationData": {
-      "type": "App Designer",
+      "type": "Import",
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
-      "src": "appDesigner",
-      "projectGuid": "ab053823-8047-487a-bc91-ecc055dd100b",
-      "lastModifiedDate": 1411001578770,
-      "creationDate": 1410999588262
+      "src": "",
+      "projectGuid": "1251c840-0d21-4851-b747-a13165d63b3f",
+      "lastModifiedDate": 1412631200288,
+      "creationDate": 1412631200233
     },
-    "XDK-app-designer": "true",
     "sourceDirectory": "www",
+    "cordovaPluginsDirectory": "plugins",
     "startFile": "index.html",
     "projectFiles": {},
     "projectDirectories": {},
@@ -30,8 +30,6 @@
         }
       }
     ],
-    "serviceMethods": [],
-    "cordovaPluginsDirectory": "plugins",
     "cordovaPlugins": [
       {
         "id": "org.apache.cordova.device",
@@ -48,6 +46,7 @@
         "paramvals": {}
       }
     ],
+    "serviceMethods": [],
     "buildConfigurations": {
       "Android": {
         "platform_": "android",
@@ -58,20 +57,18 @@
           "android-targetSdkVersion": "19"
         },
         "isActive_": true,
-        "appName_": "Grid View",
-        "appID_": "xdk.template.gridview",
+        "appName_": "GridView",
+        "appID_": "not.yet.specified",
         "appAccess_": "*",
         "icons_": [],
         "splashes_": [],
         "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "cordovaCLIVersion_": "3.3",
-        "crosswalkVersion_": "stable",
+        "cordovaCLIVersion_": "3.5",
         "appVersion_": "0.0.1",
-        "appDescription_": "",
-        "appAuthor_": "",
-        "appVersionCode_": "1"
+        "appVersionCode_": "1",
+        "crosswalkVersion_": "stable"
       },
       "Android-Crosswalk": {
         "platform_": "android",
@@ -82,20 +79,18 @@
           "android-targetSdkVersion": "19"
         },
         "isActive_": true,
-        "appName_": "Grid View",
-        "appID_": "xdk.template.gridview",
+        "appName_": "GridView",
+        "appID_": "not.yet.specified",
         "appAccess_": "*",
         "icons_": [],
         "splashes_": [],
         "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "cordovaCLIVersion_": "3.3",
-        "crosswalkVersion_": "stable",
+        "cordovaCLIVersion_": "3.5",
         "appVersion_": "0.0.1",
-        "appDescription_": "",
-        "appAuthor_": "",
-        "appVersionCode_": "1"
+        "appVersionCode_": "1",
+        "crosswalkVersion_": "stable"
       },
       "iOS": {
         "platform_": "ios",
@@ -106,40 +101,33 @@
           "ios-configuration": "adhoc"
         },
         "isActive_": true,
-        "appName_": "Grid View",
-        "appID_": "xdk.template.gridview",
+        "appName_": "GridView",
+        "appID_": "not.yet.specified",
         "appAccess_": "*",
         "icons_": [],
         "splashes_": [],
         "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "cordovaCLIVersion_": "3.3",
-        "crosswalkVersion_": "stable",
-        "appVersion_": "0.0.1",
-        "appDescription_": ""
+        "cordovaCLIVersion_": "3.5",
+        "appVersion_": "0.0.1"
       },
       "Windows8": {
         "platform_": "windows8",
         "runtime_": "Cordova 3.x",
         "name_": "Windows8",
-        "preferences_": {
-          "windows-publisher-display-name": "",
-          "windows-publisher-id": ""
-        },
+        "preferences_": {},
         "isActive_": true,
-        "appName_": "Grid View",
-        "appID_": "xdk.template.gridview",
+        "appName_": "GridView",
+        "appID_": "not.yet.specified",
         "appAccess_": "*",
         "icons_": [],
         "splashes_": [],
         "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "cordovaCLIVersion_": "3.3",
-        "crosswalkVersion_": "stable",
-        "appVersion_": "0.0.0.1",
-        "appDescription_": ""
+        "cordovaCLIVersion_": "3.5",
+        "appVersion_": "0.0.0.1"
       },
       "WindowsPhone8": {
         "platform_": "wp8",
@@ -148,15 +136,14 @@
         "preferences_": {},
         "isActive_": true,
         "appName_": "GridView",
-        "appID_": "xdk.intel.ad.project",
+        "appID_": "not.yet.specified",
         "appAccess_": "*",
         "icons_": [],
         "splashes_": [],
         "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "cordovaCLIVersion_": "3.3",
-        "crosswalkVersion_": "stable",
+        "cordovaCLIVersion_": "3.5",
         "appVersion_": "0.0.0.1"
       }
     }

@@ -1,11 +1,11 @@
 {
   "project": {
-    "projectSettingsVersion": "1.1",
+    "projectSettingsVersion": "1.2",
     "creationData": {
       "type": "App Designer",
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "appDesigner",
-      "projectGuid": "ab053823-8047-487a-bc91-ecc055dd100b",
+			"projectGuid": "00000000-0000-0000-0000-000000000000",
       "lastModifiedDate": 1411001578770,
       "creationDate": 1410999588262
     },
@@ -66,8 +66,8 @@
         "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "cordovaCLIVersion_": "3.5",
-        "crosswalkVersion_": "stable",
+        "cordovaCLIVersion_": "?",
+        "crosswalkVersion_": "?",
         "appVersion_": "0.0.1",
         "appDescription_": "",
         "appAuthor_": "",
@@ -90,11 +90,11 @@
         "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "cordovaCLIVersion_": "3.5",
-        "crosswalkVersion_": "stable",
+        "cordovaCLIVersion_": "?",
+        "crosswalkVersion_": "?",
         "appVersion_": "0.0.1",
         "appDescription_": "",
-        "appAuthor_": "",
+				"appAuthor_": "Intel XDK",
         "appVersionCode_": "1"
       },
       "iOS": {
@@ -114,8 +114,8 @@
         "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "cordovaCLIVersion_": "3.5",
-        "crosswalkVersion_": "stable",
+        "cordovaCLIVersion_": "?",
+        "crosswalkVersion_": "?",
         "appVersion_": "0.0.1",
         "appDescription_": ""
       },
@@ -136,8 +136,8 @@
         "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "cordovaCLIVersion_": "3.5",
-        "crosswalkVersion_": "stable",
+        "cordovaCLIVersion_": "?",
+        "crosswalkVersion_": "?",
         "appVersion_": "0.0.0.1",
         "appDescription_": ""
       },
@@ -155,8 +155,8 @@
         "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "cordovaCLIVersion_": "3.5",
-        "crosswalkVersion_": "stable",
+				"cordovaCLIVersion_": "?",
+        "crosswalkVersion_": "?",
         "appVersion_": "0.0.0.1"
       }
     }

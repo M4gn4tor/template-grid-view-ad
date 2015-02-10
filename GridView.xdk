@@ -3,69 +3,44 @@
     "projectSettingsVersion": "1.2",
     "creationData": {
       "type": "App Designer",
-      "projectTypeName": "com.intel.xdk.projecttype.jsapp",
-      "src": "appDesigner",
-			"projectGuid": "00000000-0000-0000-0000-000000000000",
-      "lastModifiedDate": 1411001578770,
-      "creationDate": 1410999588262
+      "projectTypeName": "com.intel.xdk.projecttype.webapp",
+      "src": "https://edge-intel.s3.amazonaws.com/jsapp/production/release-2014-ww51/template-grid-view-appdesigner/sample.zip",
+      "projectGuid": "00000000-0000-0000-0000-000000000000",
+      "lastModifiedDate": 1423594388471,
+      "creationDate": 1423593403995
     },
     "XDK-app-designer": "true",
     "sourceDirectory": "www",
     "startFile": "index.html",
     "projectFiles": {},
     "projectDirectories": {},
-    "libraries": [
-      {
-        "name": "Cordova",
-        "version": "2.9.0",
-        "data": {
-          "default": true
-        }
-      },
-      {
-        "name": "intelXDK",
-        "version": "4.0.0",
-        "data": {
-          "default": true
-        }
-      }
-    ],
+    "libraries": [],
     "serviceMethods": [],
     "cordovaPluginsDirectory": "plugins",
-    "cordovaPlugins": [
-      {
-        "id": "org.apache.cordova.device",
-        "version": "0.2.9",
-        "selectedState": "Auto",
-        "data": {},
-        "paramvals": {}
-      },
-      {
-        "id": "org.apache.cordova.splashscreen",
-        "version": "0.3.0",
-        "selectedState": "Auto",
-        "data": {},
-        "paramvals": {}
-      }
-    ],
+    "cordovaPlugins": [],
     "buildConfigurations": {
       "Android": {
         "platform_": "android",
-        "runtime_": "Cordova 3.x",
+        "runtime_": "W3C on Cordova",
         "name_": "Android",
         "preferences_": {
           "android-minSdkVersion": "10",
-          "android-targetSdkVersion": "19"
+          "android-targetSdkVersion": "19",
+          "android-installLocation": "auto"
         },
         "isActive_": true,
-        "appName_": "Grid View",
+        "appName_": "gridview",
         "appID_": "xdk.template.gridview",
-        "appAccess_": "*",
+        "appAccess_": [
+          {
+            "origin": "*"
+          }
+        ],
         "icons_": [],
         "splashes_": [],
-        "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
+        "iosProvs_": [],
         "cordovaCLIVersion_": "?",
         "crosswalkVersion_": "?",
         "appVersion_": "0.0.1",
@@ -75,45 +50,54 @@
       },
       "Android-Crosswalk": {
         "platform_": "android",
-        "runtime_": "Crosswalk with Cordova 3.x",
+        "runtime_": "W3C on Crosswalk",
         "name_": "Android-Crosswalk",
         "preferences_": {
           "android-minSdkVersion": "14",
-          "android-targetSdkVersion": "19"
+          "android-targetSdkVersion": "19",
+          "android-installLocation": "auto"
         },
         "isActive_": true,
-        "appName_": "Grid View",
+        "appName_": "gridview",
         "appID_": "xdk.template.gridview",
-        "appAccess_": "*",
+        "appAccess_": [
+          {
+            "origin": "*"
+          }
+        ],
         "icons_": [],
         "splashes_": [],
-        "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
+        "iosProvs_": [],
         "cordovaCLIVersion_": "?",
         "crosswalkVersion_": "?",
         "appVersion_": "0.0.1",
         "appDescription_": "",
-				"appAuthor_": "Intel XDK",
+        "appAuthor_": "",
         "appVersionCode_": "1"
       },
       "iOS": {
         "platform_": "ios",
-        "runtime_": "Cordova 3.x",
+        "runtime_": "W3C on Cordova",
         "name_": "iOS",
         "preferences_": {
-          "ios-target": "5",
+          "ios-target": "6",
           "ios-configuration": "adhoc"
         },
         "isActive_": true,
-        "appName_": "Grid View",
+        "appName_": "gridview",
         "appID_": "xdk.template.gridview",
-        "appAccess_": "*",
+        "appAccess_": [
+          {
+            "origin": "*"
+          }
+        ],
         "icons_": [],
         "splashes_": [],
-        "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
+        "iosProvs_": [],
         "cordovaCLIVersion_": "?",
         "crosswalkVersion_": "?",
         "appVersion_": "0.0.1",
@@ -121,44 +105,110 @@
       },
       "Windows8": {
         "platform_": "windows8",
-        "runtime_": "Cordova 3.x",
+        "runtime_": "W3C on Cordova",
         "name_": "Windows8",
         "preferences_": {
           "windows-publisher-display-name": "",
           "windows-publisher-id": ""
         },
         "isActive_": true,
-        "appName_": "Grid View",
+        "appName_": "gridview",
         "appID_": "xdk.template.gridview",
-        "appAccess_": "*",
+        "appAccess_": [
+          {
+            "origin": "*"
+          }
+        ],
         "icons_": [],
         "splashes_": [],
-        "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
+        "iosProvs_": [],
         "cordovaCLIVersion_": "?",
         "crosswalkVersion_": "?",
         "appVersion_": "0.0.0.1",
+        "appAuthor_": "Intel XDK",
         "appDescription_": ""
       },
-      "WindowsPhone8": {
-        "platform_": "wp8",
-        "runtime_": "Cordova 3.x",
-        "name_": "WindowsPhone8",
+      "WebApp": {
+        "platform_": "webapp",
+        "runtime_": "W3C",
+        "name_": "WebApp",
         "preferences_": {},
         "isActive_": true,
-        "appName_": "GridView",
-        "appID_": "xdk.intel.ad.project",
-        "appAccess_": "*",
+        "appName_": "gridview",
+        "appID_": "xdk.template.gridview",
+        "appAccess_": [
+          {
+            "origin": "*"
+          }
+        ],
         "icons_": [],
         "splashes_": [],
-        "iosProvs_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-				"cordovaCLIVersion_": "?",
-        "crosswalkVersion_": "?",
-        "appVersion_": "0.0.0.1"
+        "appVersion_": "0.0.1"
+      },
+      "Firefox": {
+        "platform_": "firefoxos",
+        "runtime_": "W3C on Firefox OS",
+        "name_": "Firefox",
+        "preferences_": {},
+        "isActive_": true,
+        "appName_": "gridview",
+        "appID_": "xdk.template.gridview",
+        "appAccess_": [
+          {
+            "origin": "*"
+          }
+        ],
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appVersion_": "0.0.1"
+      },
+      "Chrome": {
+        "platform_": "chromeos",
+        "runtime_": "W3C on Chrome OS",
+        "name_": "Chrome",
+        "preferences_": {},
+        "isActive_": true,
+        "appName_": "gridview",
+        "appID_": "xdk.template.gridview",
+        "appAccess_": [
+          {
+            "origin": "*"
+          }
+        ],
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appVersion_": "0.0.1"
+      },
+      "Facebook": {
+        "platform_": "facebook",
+        "runtime_": "W3C on Facebook",
+        "name_": "Facebook",
+        "preferences_": {},
+        "isActive_": true,
+        "appName_": "gridview",
+        "appID_": "xdk.template.gridview",
+        "appAccess_": [
+          {
+            "origin": "*"
+          }
+        ],
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appVersion_": "0.0.1"
       }
-    }
+    },
+    "gameAssetDirectory": "asset",
+    "gameMetadata": {},
+    "projectTags": []
   }
 }

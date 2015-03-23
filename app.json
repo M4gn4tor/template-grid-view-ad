@@ -3,7 +3,7 @@
 "title":"Grid View App (App Designer)",
 "tooltip":"[App Designer Ready] Use this template to provide a grid view that will open detail view. For example, create a Photo app or Instagram* app.",
 "description":"[App Designer Ready] Use this template to provide a grid view that will open detail view. For example, create a Photo app or Instagram* app.",
-"articleUrl":"http://software.intel.com/en-us/html5/articles/templates-to-get-started-with-html5-mobile-app-development",
+"articleUrl":"https://software.intel.com/en-us/xdk/docs/templates-to-get-started-with-xdk-app-development",
 "type":"appdesigner",
 "visible" : "true",
 "sortWeight":"0.5",

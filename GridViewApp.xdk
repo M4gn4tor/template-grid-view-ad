@@ -4,10 +4,10 @@
     "creationData": {
       "type": "App Designer",
       "projectTypeName": "com.intel.xdk.projecttype.webapp",
-      "src": "https://edge-intel.s3.amazonaws.com/jsapp/production/release-2014-ww51/template-grid-view-appdesigner/sample.zip",
+      "src": "appDesigner",
       "projectGuid": "00000000-0000-0000-0000-000000000000",
-      "lastModifiedDate": 1423594388471,
-      "creationDate": 1423593403995
+      "lastModifiedDate": 1424986650687,
+      "creationDate": 1424986650610
     },
     "XDK-app-designer": "true",
     "sourceDirectory": "www",
@@ -29,23 +29,19 @@
           "android-installLocation": "auto"
         },
         "isActive_": true,
-        "appName_": "gridview",
-        "appID_": "xdk.template.gridview",
-        "appAccess_": [
-          {
-            "origin": "*"
-          }
-        ],
+        "appName_": "GridViewApp",
+        "appID_": "xdk.intel.blank.ad.template",
+        "appAccess_": [],
         "icons_": [],
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
         "iosProvs_": [],
-        "cordovaCLIVersion_": "?",
-        "crosswalkVersion_": "?",
+        "cordovaCLIVersion_": "4.1.2",
+        "crosswalkVersion_": "10",
         "appVersion_": "0.0.1",
-        "appDescription_": "",
-        "appAuthor_": "",
+        "appAuthor_": "Intel XDK",
+        "appDescription_": "Template to develop a packaged mobile web app using the App Designer UI editor.",
         "appVersionCode_": "1"
       },
       "Android-Crosswalk": {
@@ -58,23 +54,19 @@
           "android-installLocation": "auto"
         },
         "isActive_": true,
-        "appName_": "gridview",
-        "appID_": "xdk.template.gridview",
-        "appAccess_": [
-          {
-            "origin": "*"
-          }
-        ],
+        "appName_": "GridViewApp",
+        "appID_": "xdk.intel.blank.ad.template.crosswalk",
+        "appAccess_": [],
         "icons_": [],
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
         "iosProvs_": [],
-        "cordovaCLIVersion_": "?",
-        "crosswalkVersion_": "?",
+        "cordovaCLIVersion_": "4.1.2",
+        "crosswalkVersion_": "10",
         "appVersion_": "0.0.1",
-        "appDescription_": "",
-        "appAuthor_": "",
+        "appAuthor_": "Intel XDK",
+        "appDescription_": "Template to develop a packaged mobile web app using the App Designer UI editor.",
         "appVersionCode_": "1"
       },
       "iOS": {
@@ -86,22 +78,19 @@
           "ios-configuration": "adhoc"
         },
         "isActive_": true,
-        "appName_": "gridview",
-        "appID_": "xdk.template.gridview",
-        "appAccess_": [
-          {
-            "origin": "*"
-          }
-        ],
+        "appName_": "GridViewApp",
+        "appID_": "xdk.intel.blank.ad.template",
+        "appAccess_": [],
         "icons_": [],
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
         "iosProvs_": [],
-        "cordovaCLIVersion_": "?",
-        "crosswalkVersion_": "?",
+        "cordovaCLIVersion_": "4.1.2",
+        "crosswalkVersion_": "10",
         "appVersion_": "0.0.1",
-        "appDescription_": ""
+        "appAuthor_": "Intel XDK",
+        "appDescription_": "Template to develop a packaged mobile web app using the App Designer UI editor."
       },
       "Windows8": {
         "platform_": "windows8",
@@ -112,23 +101,19 @@
           "windows-publisher-id": ""
         },
         "isActive_": true,
-        "appName_": "gridview",
-        "appID_": "xdk.template.gridview",
-        "appAccess_": [
-          {
-            "origin": "*"
-          }
-        ],
+        "appName_": "GridViewApp",
+        "appID_": "xdk.intel.blank.ad.template",
+        "appAccess_": [],
         "icons_": [],
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
         "iosProvs_": [],
-        "cordovaCLIVersion_": "?",
-        "crosswalkVersion_": "?",
+        "cordovaCLIVersion_": "4.1.2",
+        "crosswalkVersion_": "10",
         "appVersion_": "0.0.0.1",
         "appAuthor_": "Intel XDK",
-        "appDescription_": ""
+        "appDescription_": "Template to develop a packaged mobile web app using the App Designer UI editor."
       },
       "WebApp": {
         "platform_": "webapp",
@@ -136,18 +121,16 @@
         "name_": "WebApp",
         "preferences_": {},
         "isActive_": true,
-        "appName_": "gridview",
-        "appID_": "xdk.template.gridview",
-        "appAccess_": [
-          {
-            "origin": "*"
-          }
-        ],
+        "appName_": "GridViewApp",
+        "appID_": "xdk.intel.blank.ad.template",
+        "appAccess_": [],
         "icons_": [],
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "appVersion_": "0.0.1"
+        "appVersion_": "0.0.1",
+        "appAuthor_": "Intel XDK",
+        "appDescription_": "Template to develop a packaged mobile web app using the App Designer UI editor."
       },
       "Firefox": {
         "platform_": "firefoxos",
@@ -155,18 +138,16 @@
         "name_": "Firefox",
         "preferences_": {},
         "isActive_": true,
-        "appName_": "gridview",
-        "appID_": "xdk.template.gridview",
-        "appAccess_": [
-          {
-            "origin": "*"
-          }
-        ],
+        "appName_": "GridViewApp",
+        "appID_": "xdk.intel.blank.ad.template",
+        "appAccess_": [],
         "icons_": [],
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "appVersion_": "0.0.1"
+        "appVersion_": "0.0.1",
+        "appAuthor_": "Intel XDK",
+        "appDescription_": "Template to develop a packaged mobile web app using the App Designer UI editor."
       },
       "Chrome": {
         "platform_": "chromeos",
@@ -174,18 +155,16 @@
         "name_": "Chrome",
         "preferences_": {},
         "isActive_": true,
-        "appName_": "gridview",
-        "appID_": "xdk.template.gridview",
-        "appAccess_": [
-          {
-            "origin": "*"
-          }
-        ],
+        "appName_": "GridViewApp",
+        "appID_": "xdk.intel.blank.ad.template",
+        "appAccess_": [],
         "icons_": [],
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "appVersion_": "0.0.1"
+        "appVersion_": "0.0.1",
+        "appAuthor_": "Intel XDK",
+        "appDescription_": "Template to develop a packaged mobile web app using the App Designer UI editor."
       },
       "Facebook": {
         "platform_": "facebook",
@@ -193,18 +172,16 @@
         "name_": "Facebook",
         "preferences_": {},
         "isActive_": true,
-        "appName_": "gridview",
-        "appID_": "xdk.template.gridview",
-        "appAccess_": [
-          {
-            "origin": "*"
-          }
-        ],
+        "appName_": "GridViewApp",
+        "appID_": "xdk.intel.blank.ad.template",
+        "appAccess_": [],
         "icons_": [],
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
-        "appVersion_": "0.0.1"
+        "appVersion_": "0.0.1",
+        "appAuthor_": "Intel XDK",
+        "appDescription_": "Template to develop a packaged mobile web app using the App Designer UI editor."
       }
     },
     "gameAssetDirectory": "asset",

@@ -1,4 +1,5 @@
 /*
+ * Copyright © 2012-2015, Intel Corporation. All rights reserved.
  * Please see the included README.md file for license terms and conditions.
  */
 
@@ -9,7 +10,20 @@
 
 
 
-window.app = window.app || {} ;         // there should only be one of these, but...
+window.app = window.app || {} ;         // there should only be one of these...
+
+
+
+// Set to "true" if you want the console.log messages to appear.
+
+app.LOG = app.LOG || false ;
+
+app.consoleLog = function() {           // only emits console.log messages if app.LOG != false
+    if( app.LOG ) {
+        var args = Array.prototype.slice.call(arguments, 0) ;
+        console.log.apply(console, args) ;
+    }
+} ;
 
 
 
@@ -22,48 +36,48 @@ window.app = window.app || {} ;         // there should only be one of these, bu
 app.initEvents = function() {
     "use strict" ;
     var fName = "app.initEvents():" ;
-    console.log(fName, "entry") ;
+    app.consoleLog(fName, "entry") ;
 
-    // initialize third-party libraries and event handlers
+    // NOTE: initialize your third-party libraries and event handlers
 
     // initThirdPartyLibraryNumberOne() ;
     // initThirdPartyLibraryNumberTwo() ;
     // initThirdPartyLibraryNumberEtc() ;
 
-    // initialize application code
+    // NOTE: initialize your application code
 
     // initMyAppCodeNumberOne() ;
     // initMyAppCodeNumberTwo() ;
     // initMyAppCodeNumberEtc() ;
 
-    // Initialize app event handlers.
-    // See app.js for a simple example.
+    // NOTE: initialize your app event handlers, see app.js for a simple event handler example
 
-// ...overly simple example...
+    // TODO: configure following to work with both touch and click events (mouse + touch)
+    // see http://msopentech.com/blog/2013/09/16/add-pinch-pointer-events-apache-cordova-phonegap-app/
+
+//...overly simple example...
 //    var el, evt ;
 //
-//    if( navigator.msPointerEnabled )                            // if on a Windows 8 machine
-//        evt = "click" ;                                         // let touch become a click event
-//    else                                                        // else, assume touch events available
-//        evt = "touchend" ;                                      // not the optimum solution...
+//    if( navigator.msPointerEnabled || !('ontouchend' in window))    // if on Win 8 machine or no touch
+//        evt = "click" ;                                             // let touch become a click event
+//    else                                                            // else, assume touch events available
+//        evt = "touchend" ;                                          // not optimum, but works
 //
 //    el = document.getElementById("id_btnHello") ;
 //    el.addEventListener(evt, myEventHandler, false) ;
 
-    // after init is all done is a good time to remove our splash screen
+    // NOTE: ...you can put other miscellaneous init stuff in this function...
+    // NOTE: ...and add whatever else you want to do now that the app has started...
+    // NOTE: ...or create your own init handlers outside of this file that trigger off the "app.Ready" event...
 
-    app.hideSplashScreen() ;                // a splash screen is optional for your app
-
-    // ...and whatever else you want to do now that the app has started...
-    // The following is just for debug, not required; keep it if you want or get rid of it.
-
-    // ...other miscellaneous init stuff here...
+    app.initDebug() ;           // just for debug, not required; keep it if you want it or get rid of it
+    app.hideSplashScreen() ;    // after init is good time to remove splash screen; using a splash screen is optional
 
     // app initialization is done
     // app event handlers are ready
     // exit to idle state and wait for app events...
 
-    console.log(fName, "exit") ;
+    app.consoleLog(fName, "exit") ;
 } ;
 document.addEventListener("app.Ready", app.initEvents, false) ;
 
@@ -76,26 +90,25 @@ document.addEventListener("app.Ready", app.initEvents, false) ;
 app.initDebug = function() {
     "use strict" ;
     var fName = "app.initDebug():" ;
-    console.log(fName, "entry") ;
+    app.consoleLog(fName, "entry") ;
 
     if( window.device && device.cordova ) {                     // old Cordova 2.x version detection
-        console.log("device.version: " + device.cordova) ;      // print the cordova version string...
-        console.log("device.model: " + device.model) ;
-        console.log("device.platform: " + device.platform) ;
-        console.log("device.version: " + device.version) ;
+        app.consoleLog("device.version: " + device.cordova) ;   // print the cordova version string...
+        app.consoleLog("device.model: " + device.model) ;
+        app.consoleLog("device.platform: " + device.platform) ;
+        app.consoleLog("device.version: " + device.version) ;
     }
 
     if( window.cordova && cordova.version ) {                   // only works in Cordova 3.x
-        console.log("cordova.version: " + cordova.version) ;    // print new Cordova 3.x version string...
+        app.consoleLog("cordova.version: " + cordova.version) ; // print new Cordova 3.x version string...
 
         if( cordova.require ) {                                 // print included cordova plugins
-            console.log(JSON.stringify(cordova.require('cordova/plugin_list').metadata, null, 1)) ;
+            app.consoleLog(JSON.stringify(cordova.require('cordova/plugin_list').metadata, null, 1)) ;
         }
     }
 
-    console.log(fName, "exit") ;
+    app.consoleLog(fName, "exit") ;
 } ;
-document.addEventListener("app.Ready", app.initDebug, false) ;
 
 
 
@@ -105,14 +118,19 @@ document.addEventListener("app.Ready", app.initDebug, false) ;
 app.hideSplashScreen = function() {
     "use strict" ;
     var fName = "app.hideSplashScreen():" ;
-    console.log(fName, "entry") ;
+    app.consoleLog(fName, "entry") ;
 
-    if( navigator.splashscreen ) {                              // Cordova API detected
+    // see https://github.com/01org/appframework/blob/master/documentation/detail/%24.ui.launch.md
+    // Do the following if you disabled App Framework autolaunch (in index.html, for example)
+    // $.ui.launch() ;
+
+    if( navigator.splashscreen && navigator.splashscreen.hide ) {   // Cordova API detected
         navigator.splashscreen.hide() ;
     }
-    if( window.intel && intel.xdk && intel.xdk.device ) {       // Intel XDK API detected
-        intel.xdk.device.hideSplashScreen() ;
+    if( window.intel && intel.xdk && intel.xdk.device ) {           // Intel XDK device API detected, but...
+        if( intel.xdk.device.hideSplashScreen )                     // ...hideSplashScreen() is inside the base plugin
+            intel.xdk.device.hideSplashScreen() ;
     }
 
-    console.log(fName, "exit") ;
+    app.consoleLog(fName, "exit") ;
 } ;

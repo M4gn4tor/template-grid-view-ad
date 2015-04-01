@@ -1,4 +1,5 @@
 /*
+ * Copyright © 2012-2015, Intel Corporation. All rights reserved.
  * Please see the included README.md file for license terms and conditions.
  */
 
@@ -9,7 +10,7 @@
 
 
 // This file contains your event handlers, the center of your application.
-// See app.initEvents() in init-app.js for event initialization.
+// NOTE: see app.initEvents() in init-app.js for event handler initialization code.
 
 // function myEventHandler() {
 //     "use strict" ;

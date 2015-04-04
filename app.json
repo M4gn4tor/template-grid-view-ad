@@ -1,14 +1,22 @@
 {
-"repoName":"template-grid-view-ad",
-"title":"Grid View App (App Designer)",
-"tooltip":"[App Designer Ready] Use this template to provide a grid view that will open detail view. For example, create a Photo app or Instagram* app.",
-"description":"[App Designer Ready] Use this template to provide a grid view that will open detail view. For example, create a Photo app or Instagram* app.",
-"articleUrl":"https://software.intel.com/en-us/templates-to-get-started-with-xdk-app-development",
-"type":"appdesigner",
-"visible" : "true",
-"sortWeight":"0.5",
-"keywords":["App Designer"],
-"highlights" : ["App Designer"],
-"relationship":"grid view",
-"projectTypeName": "com.intel.xdk.projecttype.webapp"
+   "tooltip" : "[App Designer Ready] Use this template to provide a grid view that will open detail view. For example, create a Photo app or Instagram* app.",
+   "visible" : true,
+   "title" : "Grid View App (App Designer)",
+   "relName" : null,
+   "appPreview" : false,
+   "description" : "[App Designer Ready] Use this template to provide a grid view that will open detail view. For example, create a Photo app or Instagram* app.",
+   "type" : "appdesigner",
+   "keywords" : [
+      "App Designer"
+   ],
+   "appName" : null,
+   "repoName" : "template-grid-view-ad",
+   "relationship" : "grid view",
+   "sortWeight" : "0.5",
+   "articleUrl" : "https://software.intel.com/en-us/templates-to-get-started-with-xdk-app-development",
+   "projectTypeName" : "com.intel.xdk.projecttype.webapp",
+   "mobile" : false,
+   "highlights" : [
+      "App Designer"
+   ]
 }

@@ -1,5 +1,7 @@
 {
    "tooltip" : "[App Designer Ready] Use this template to provide a grid view that will open detail view. For example, create a Photo app or Instagram* app.",
+   "section" : "templates",
+   "group" : "other",
    "visible" : true,
    "title" : "Grid View App (App Designer)",
    "relName" : null,
